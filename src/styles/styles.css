@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Delius", cursive;
   text-align: center;
 }
 
@@ -20,6 +20,7 @@ ul li a {
   padding: 1rem 2rem;
   font-size: 1.15rem;
   transition: all 0.25s ease-in-out;
+  border-left: 1px solid #fff;
 }
 
 ul li a:hover {
