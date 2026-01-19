@@ -4,6 +4,51 @@
   margin: 0;
   font-family: "Delius", cursive;
   text-align: center;
+  scroll-behavior: smooth;
+}
+
+@keyframes bgColourAnimation {
+  0% {
+    background-color: lemonchiffon;
+  }
+  50% {
+    background-color: lavender;
+  }
+  100% {
+    background-color: lemonchiffon;
+  }
+}
+/*This will move an image to the left*/
+@keyframes imgAnimationLeft {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 100px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes imgAnimationRight {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+body {
+  background-color: lemonchiffon;
+  animation-name: bgColourAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  line-height: 1.5;
 }
 
 ul {
@@ -30,6 +75,90 @@ ul li a:hover {
 
 h1 {
   padding: 5rem 0;
-  text-decoration: underline;
   color: blue;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem 3rem 5rem 3rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.container h2 {
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-decoration: underline;
+  color: blueviolet;
+}
+
+.picture-section .bg-image-container {
+  background-image: url(../images/view-pic-saint-lou.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.picture-section .bg-image-container p {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 1rem;
+  border: 3px dotted darkblue;
+  transition: all 0.25s ease-in-out;
+}
+
+.picture-section .bg-image-container p:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.picture-section .random-photo-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.picture-section .random-photo {
+  height: 25rem;
+  border-radius: 1rem;
+  border: 3px dotted darkblue;
+}
+
+.picture-section .photo-one {
+  position: relative;
+  animation-name: imgAnimationRight;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.picture-section .photo-two {
+  position: relative;
+  animation-name: imgAnimationLeft;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.picture-section .random-photo-text-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.picture-section .random-photo-text {
+  border-radius: 1rem;
 }
