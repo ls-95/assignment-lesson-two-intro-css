@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  text-align: center;
 }
 
 ul {
@@ -24,4 +25,10 @@ ul li a {
 ul li a:hover {
   cursor: pointer;
   background-color: #af76e3a6;
+}
+
+h1 {
+  padding: 5rem 0;
+  text-decoration: underline;
+  color: blue;
 }
