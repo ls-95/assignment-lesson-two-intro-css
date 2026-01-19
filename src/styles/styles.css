@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
 }
 
+/*This will change the background colour*/
 @keyframes bgColourAnimation {
   0% {
     background-color: lemonchiffon;
@@ -18,6 +19,7 @@
     background-color: lemonchiffon;
   }
 }
+
 /*This will move an image to the left*/
 @keyframes imgAnimationLeft {
   0% {
@@ -31,6 +33,7 @@
   }
 }
 
+/*This will move an image to the right*/
 @keyframes imgAnimationRight {
   0% {
     left: 0px;
@@ -143,14 +146,14 @@ h1 {
   position: relative;
   animation-name: imgAnimationRight;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
 }
 
 .picture-section .photo-two {
   position: relative;
   animation-name: imgAnimationLeft;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
 }
 
 .picture-section .random-photo-text-container {
@@ -161,4 +164,9 @@ h1 {
 
 .picture-section .random-photo-text {
   border-radius: 1rem;
+}
+
+hr {
+  border: 1px solid blue;
+  margin: 2rem 0;
 }
