@@ -54,14 +54,14 @@ body {
   line-height: 1.5;
 }
 
-ul {
+.nav-container {
   display: flex;
   list-style-type: none;
   background-color: #8a2be2;
   flex-direction: row-reverse;
 }
 
-ul li a {
+.nav-container .nav-links a {
   display: block;
   text-decoration: none;
   color: #fff;
@@ -71,7 +71,7 @@ ul li a {
   border-left: 1px solid #fff;
 }
 
-ul li a:hover {
+.nav-container .nav-links a:hover {
   cursor: pointer;
   background-color: #af76e3a6;
 }
