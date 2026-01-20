@@ -154,7 +154,7 @@ h1 {
   position: relative;
   animation-name: imgAnimationLeft;
   animation-duration: 4s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 5;
 }
 
 .picture-section .random-photo-text-container {
@@ -182,20 +182,52 @@ hr {
 .container .square-section .square {
   height: 100px;
   width: 100px;
+  border: 2px solid #000;
+}
+
+.container .square-section .square:hover {
+  cursor: pointer;
 }
 
 .container .square-section .red-square {
   background-color: red;
+  color: #fff;
+  transition: width 3s;
+}
+
+.container .square-section .red-square:hover {
+  width: 500px;
 }
 
 .container .square-section .yellow-square {
   background-color: yellow;
+  transition: all 2s;
+}
+
+.container .square-section .yellow-square:hover {
+  transform: rotateY(180deg);
 }
 
 .container .square-section .green-square {
   background-color: green;
+  color: #fff;
+  transition: all 5s;
+}
+
+.container .square-section .green-square:hover {
+  background-color: green;
+  transform: rotate(360deg);
 }
 
 .container .square-section .blue-square {
   background-color: blue;
+  color: #fff;
+  transition:
+    width 5s,
+    height 1s;
+}
+
+.container .square-section .blue-square:hover {
+  width: 500px;
+  height: 500px;
 }
