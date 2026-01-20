@@ -102,6 +102,7 @@ h1 {
   color: blueviolet;
 }
 
+/*Below are the styles for the first section*/
 .picture-section .bg-image-container {
   background-image: url(../images/view-pic-saint-lou.jpg);
   background-size: cover;
@@ -169,4 +170,32 @@ h1 {
 hr {
   border: 1px solid blue;
   margin: 2rem 0;
+}
+
+/*Below are the styles for the second section*/
+.container .square-section .square-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.container .square-section .square {
+  height: 100px;
+  width: 100px;
+}
+
+.container .square-section .red-square {
+  background-color: red;
+}
+
+.container .square-section .yellow-square {
+  background-color: yellow;
+}
+
+.container .square-section .green-square {
+  background-color: green;
+}
+
+.container .square-section .blue-square {
+  background-color: blue;
 }
