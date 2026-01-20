@@ -264,3 +264,9 @@ hr {
 .list-container .list-four {
   list-style-type: square;
 }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-weight: 900;
+}
