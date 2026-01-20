@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   font-family: "Delius", cursive;
-  text-align: center;
   scroll-behavior: smooth;
 }
 
@@ -102,6 +101,13 @@ h1 {
   color: blueviolet;
 }
 
+.picture-section,
+.square-section,
+h1,
+.introduction-text {
+  text-align: center;
+}
+
 /*Below are the styles for the first section*/
 .picture-section .bg-image-container {
   background-image: url(../images/view-pic-saint-lou.jpg);
@@ -173,53 +179,53 @@ hr {
 }
 
 /*Below are the styles for the second section*/
-.container .square-section .square-grid {
+.square-section .square-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
 }
 
-.container .square-section .square {
+.square-section .square {
   height: 100px;
   width: 100px;
   border: 2px solid #000;
 }
 
-.container .square-section .square:hover {
+.square-section .square:hover {
   cursor: pointer;
 }
 
-.container .square-section .red-square {
+.square-section .red-square {
   background-color: red;
   color: #fff;
   transition: width 3s;
 }
 
-.container .square-section .red-square:hover {
+.square-section .red-square:hover {
   width: 500px;
 }
 
-.container .square-section .yellow-square {
+.square-section .yellow-square {
   background-color: yellow;
   transition: all 2s;
 }
 
-.container .square-section .yellow-square:hover {
+.square-section .yellow-square:hover {
   transform: rotateY(180deg);
 }
 
-.container .square-section .green-square {
+.square-section .green-square {
   background-color: green;
   color: #fff;
   transition: all 5s;
 }
 
-.container .square-section .green-square:hover {
+.square-section .green-square:hover {
   background-color: green;
   transform: rotate(360deg);
 }
 
-.container .square-section .blue-square {
+.square-section .blue-square {
   background-color: blue;
   color: #fff;
   transition:
@@ -227,7 +233,32 @@ hr {
     height 1s;
 }
 
-.container .square-section .blue-square:hover {
+.square-section .blue-square:hover {
   width: 500px;
   height: 500px;
+}
+
+.list-section h2 {
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-container .list-one {
+  list-style-type: upper-roman;
+}
+
+.list-container .list-two {
+  list-style-type: circle;
+}
+
+.list-container .list-three {
+  list-style-type: lower-roman;
+}
+
+.list-container .list-four {
+  list-style-type: square;
 }
