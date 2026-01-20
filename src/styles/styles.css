@@ -108,7 +108,7 @@ h1,
   text-align: center;
 }
 
-/*Below are the styles for the first section*/
+/*Below are the styles for the first (picture) section*/
 .picture-section .bg-image-container {
   background-image: url(../images/view-pic-saint-lou.jpg);
   background-size: cover;
@@ -178,7 +178,7 @@ hr {
   margin: 2rem 0;
 }
 
-/*Below are the styles for the second section*/
+/*Below are the styles for the second (square) section*/
 .square-section .square-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -237,6 +237,8 @@ hr {
   width: 500px;
   height: 500px;
 }
+
+/*Below are the styles for the third (list) section*/
 
 .list-section h2 {
   text-align: center;
